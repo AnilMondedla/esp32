@@ -9,7 +9,7 @@ void _setup() {
 
   Motor2.attach(15, 18, 19);
 
-  Dabble.begin("MyEsp32");
+  Dabble.begin("ax");
 }
 
 void _loop() {
@@ -23,23 +23,23 @@ void setup() {
 void loop() {
   _loop();
   if (GamePad.isPressed(0)) {
-    Motor1.moveMotor(2.55 * 100);
-    Motor2.moveMotor(2.55 * 100);
+    Motor1.moveMotor(1.00 * 100);
+    Motor2.moveMotor(1.00 * 100);
   }
   else {
     if (GamePad.isPressed(1)) {
-      Motor1.moveMotor(-2.55 * 100);
-      Motor2.moveMotor(-2.55 * 100);
+      Motor1.moveMotor(-1.00 * 100);
+      Motor2.moveMotor(-1.00 * 100);
     }
     else {
       if (GamePad.isPressed(3)) {
-        Motor1.moveMotor(2.55 * 100);
-        Motor2.moveMotor(-2.55 * 100);
+        Motor1.moveMotor(1.00 * 100);
+        Motor2.moveMotor(-1.00 * 100);
       }
       else {
         if (GamePad.isPressed(2)) {
-          Motor1.moveMotor(-2.55 * 100);
-          Motor2.moveMotor(2.55 * 100);
+          Motor1.moveMotor(-1.00 * 100);
+          Motor2.moveMotor(1.00 * 100);
         }
         else {
           Motor1.lockMotor();
