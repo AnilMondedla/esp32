@@ -9,7 +9,7 @@ void _setup() {
 
   Motor2.attach(15, 18, 19);
 
-  Dabble.begin("ax");
+  Dabble.begin("Esp32");
 }
 
 void _loop() {
