@@ -17,7 +17,7 @@ void setup() {
   pinMode(Motor_R_B, OUTPUT);
   
   Serial.println("START");
-  WiFi.begin("ASK","93914794");
+  WiFi.begin("Anil","anil1234");
 // Connecting WiFi
  while ((!(WiFi.status() == WL_CONNECTED))){
     delay(300);
